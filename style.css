@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500;600&family=Montserrat:wght@300;500;900&display=swap');
+
+@font-face {
+    font-family: 'Cattino';
+    src: url('Purrfect.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6c5353;
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 9px;
+}
+
+.informations-girls p::-webkit-scrollbar-thumb{
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 245, 240);
+    background-size: 550px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#patas{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.header_page{
+    position: sticky; 
+    top: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0px 25px 0px 0px;
+    width: 100%;
+    height: 110px;
+    background-color: #e0d1be;
+    border-bottom: 5px solid #6c5353;
+    z-index: 100; 
+}
+
+.header_page img{
+    width: 200px;
+}
+
+.title{
+
+    font-family: 'Cattino';
+}
+
+.nav_page {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.title{
+    font-size: 200%;
+}
+
+.nav_page a{
+    color: #6c5353;
+    font-family: "Cattino";
+    font-size: 120%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.nav_page a:hover{
+    color: white;
+}
+
+.toldo{
+    background-image: url(img/desenho-1.png);
+    background-position: -10px;
+    background-size: contain;
+    max-width: 100%;
+    height: 95px;
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+}
+
+.content{
+    margin-top: 50px;
+}
+
+.content_slide{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+}
+
+.content_slide img{
+    width: 100%;
+}
+
+.navigation div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: 290px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation .btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation .btn2{
+    background-color: white;
+}
+
+.content-menu{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+    
+}
+.content-menu img{
+    height: 100%;
+    width: 40%;
+}
+
+.menu-text{
+
+    background-color: #6c5353;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text h4{
+    color: #e0d1be;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 20px;
+
+}
+
+.menu-text a{
+    padding: 5px 50px;
+    border: 2px solid #e0d1be;
+    border-radius: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e0d1be;
+    transition: 0.3s ease;
+}
+
+.menu-text a:hover{
+    transform: scale(1.3);
+}
+
+.cards-content{
+    background-image: url(img/Wave.png);
+    background-size: cover;
+    background-position:bottom;
+    background-color: #e0d1be;
+    margin-bottom: 80px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content :space-around;
+    align-items: center;
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+}
+
+.title{
+    background-color: #e0d1be;
+    padding: 10px;
+    color: #6c5353;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    border-radius: 100px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.paw-cats {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .paw-cats-content {
+    width: 200%;
+    height: 100%;
+    background-image: url(/img/pawcats.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.1s;
+  }
+
+.card-cat-content{
+    max-width: 100%;
+    height: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-cat{
+    background-color: rgb(255, 245, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 245px;
+    height: 390px;
+    box-shadow: inset 0px 0px 5px rgb(133, 121, 121);
+    border: 2px dashed #af9c83;
+}
+
+.name-cat{
+    text-align: center;
+    font-family: 'Cattino';
+    color: #6c5353;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: solid 2px #6c5353;
+    border-radius: 12px;
+}
+
+.img-cat{
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(133, 121, 121);
+}
+
+.informations-cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 3px;
+}
+
+.informations-cat p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6c5353;
+}
+
+.description-cat{
+    padding: 7px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+.forms{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link-forms{
+    padding: 5px 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#link-forms:hover{
+    transform: scale(1.1);
+}
+
+.card-girls-content{
+    max-width: 100%;
+    height: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
+.card-girls{
+    background-color: rgb(255, 245, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 245px;
+    height: 390px;
+    
+    border: 2px dashed #af9c83;
+}
+
+.name-girls{
+    text-align: center;
+    font-family: 'Cattino';
+    color: #6c5353;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: solid 2px #6c5353;
+    border-radius: 12px;
+}
+
+.img-girls{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(133, 121, 121);
+}
+
+.informations-girls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 3px;
+}
+
+.informations-girls p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6c5353;
+    overflow:auto;
+}
+
+.description-girls{
+    padding: 7px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+.container-history-coffee{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+}
+
+.history-img{
+    background-image: url(img/catHistory.jpg);
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+}
+
+.history-coffee{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0px;
+    background-color: #6c5353;
+    max-height: 100%;
+    width: 100%;
+    padding: 80px;
+}
+
+.history-coffee h1{
+    color: #e0d1be;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.history-coffee h3{
+    color: #af9c83;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pointers-text{
+    color: #af9c83;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.text-history{
+    color: #e0d1be;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-contacts{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+}
+
+.contacts-img{
+    background-image: url(img/ContactCat.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+
+.contacts{
+    background-color: #6c5353;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    padding: 80px;
+}
+
+.contacts h4{
+    color: #af9c83;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contacts h1{
+    color: #e0d1be;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-forms{
+    width: 100%;
+    display: flex;
+}
+
+.contact-forms i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.contact-forms a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #e0d1be;
+}
+
+.contact-forms p{
+    font-family: 'Montserrat', sans-serif;
+    color: #e0d1be;
+}
+
+.container-store{
+    width: 100%;
+    background-image: url(img/Wave.png);
+    filter: drop-shadow(0 0 2px rgb(133, 121, 121));
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 90px;
+}
+
+.header-store{
+    background-color: #e0d1be;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-store i{
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.header-store h1{
+    text-align: center;
+    margin-left: 70px;
+    padding: 12px;
+    color: #6c5353;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-product-content{
+    max-width: 100%;
+    height: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-store{
+    background-color: rgb(255, 245, 240);
+    border: 2px dashed #af9c83;
+    width: 215px;
+    height: 360px;
+}
+
+.card-store img{
+    width: 100%;
+    height: 65%;
+}
+
+.info-product{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.product-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+.price{
+    display: flex;
+}
+
+.reduct-price{
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    text-decoration: line-through;
+    margin-right: 13px;
+}
+
+.atual-price{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.add-car{
+    background-color: #6c5353;
+    color: rgb(255, 245, 240);
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
